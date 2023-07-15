@@ -94,6 +94,8 @@ function Home() {
       {
         breakpoint: 600,
         settings: {
+          arrows: false,
+
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2
@@ -102,6 +104,8 @@ function Home() {
       {
         breakpoint: 480,
         settings: {
+          arrows: false,
+
           slidesToShow: 1,
           slidesToScroll: 1
         }
@@ -290,7 +294,7 @@ function Home() {
               <h1 className="text-lg md:text-2xl font-semibold text-[#9900ff]">
                 Google Developer Student Clubs Lead
               </h1>
-              <img src={gdsc} className="w-[80%]" alt="" />
+              <img src={gdsc} className="w-[80%] md:w-[30%]" alt="" />
             </div>
             <div>
               <p className="text-sm md:text-lg mt-8 md:mt-16 text-[#4e4e4e]">
@@ -329,7 +333,7 @@ function Home() {
           <h1 className="text-lg md:text-2xl font-semibold text-[#9900ff]">
                 TinkerHub Campus Lead
               </h1>
-              <img src={tinker} className="w-[30%] mt-4 md:mt-0" alt="" />
+              <img src={tinker} className="w-[30%] md:w-[10%] mt-4 md:mt-0" alt="" />
             </div>
             <div>
               <p className="text-sm md:text-lg mt-8 md:mt-16 text-[#4e4e4e]">
@@ -370,7 +374,7 @@ function Home() {
           <h1 className="text-lg md:text-2xl font-semibold text-[#9900ff]">
                 Campus ambassador and district coordinator of GTech muLearn{" "}
               </h1>
-              <img src={mu} className="w-[50%] mt-4 md:mt-0" alt="" />
+              <img src={mu} className="w-[50%] md:w-[20%] mt-4 md:mt-0" alt="" />
             </div>
             <div>
               <p className="text-sm md:text-lg mt-8 md:mt-16 text-[#4e4e4e]">
