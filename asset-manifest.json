@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a40d6791.css",
+    "main.js": "/static/js/main.530f047d.js",
+    "static/media/alekhya.gif": "/static/media/alekhya.470940bdfb472f439f99.gif",
+    "static/media/saron.gif": "/static/media/saron.ebae3169ded671253fbf.gif",
+    "static/media/trouvailler.gif": "/static/media/trouvailler.59a344f4c8376b0ea0ba.gif",
+    "static/media/bg.png": "/static/media/bg.1ae70f8c5e0c0cbc1f79.png",
+    "static/media/mobbg.png": "/static/media/mobbg.348bf3f5064dff8d42d4.png",
+    "static/media/g1.webp": "/static/media/g1.b8afae1c1597774d3121.webp",
+    "static/media/th2.webp": "/static/media/th2.6e006c76481c63391adf.webp",
+    "static/media/g2.webp": "/static/media/g2.7321d4e65561491b1650.webp",
+    "static/media/bodybg.png": "/static/media/bodybg.570383891b06b401c657.png",
+    "static/media/3.webp": "/static/media/3.143141cbc8f51dc0ba43.webp",
+    "static/media/4.webp": "/static/media/4.5cc4ee8ea35cd2dd33d9.webp",
+    "static/media/2.webp": "/static/media/2.04853609cd9d2a8cd6d4.webp",
+    "static/media/6.webp": "/static/media/6.936948c4067b7720779b.webp",
+    "static/media/g3.webp": "/static/media/g3.d7f997e6314c04f645e4.webp",
+    "static/media/th4.webp": "/static/media/th4.d0bf6f36d1e432233c40.webp",
+    "static/media/1.webp": "/static/media/1.9921c6143276e3c17d70.webp",
+    "static/media/th5.webp": "/static/media/th5.441f52693dd869208545.webp",
+    "static/media/th3.webp": "/static/media/th3.f01b5d6bb2c4e60c4c3e.webp",
+    "static/media/th1.webp": "/static/media/th1.76fbfea80bbb980d17d2.webp",
+    "static/media/gdsc.png": "/static/media/gdsc.5ead9c0f154a09e133ae.png",
+    "static/media/googleappscript.png": "/static/media/googleappscript.1192e5732714710dad31.png",
+    "static/media/5.webp": "/static/media/5.27bdd938db19648ceea3.webp",
+    "static/media/mongo.png": "/static/media/mongo.63562434bfd990e564bb.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.a40d6791.css.map": "/static/css/main.a40d6791.css.map",
+    "main.530f047d.js.map": "/static/js/main.530f047d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a40d6791.css",
+    "static/js/main.530f047d.js"
+  ]
+}
