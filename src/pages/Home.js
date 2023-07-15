@@ -1,8 +1,8 @@
 import React from "react";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -44,7 +44,7 @@ import mu from "../assets/download.png";
 import g1 from "../assets/volunteer/g1.webp";
 import g2 from "../assets/volunteer/g2.webp";
 import g3 from "../assets/volunteer/g3.webp";
-
+import { Link } from "react-router-dom";
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -88,8 +88,8 @@ function Home() {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 600,
@@ -98,8 +98,8 @@ function Home() {
 
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 480,
@@ -107,50 +107,90 @@ function Home() {
           arrows: false,
 
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="z-[1] relative home h-[100vh]">
-      <div className="pt-4 md:pt-12 px-4 md:px-40 flex gap-[10px] md:gap-[2rem] items-center">
-<h1 className="text-xl font-semibold text-[#7629ff] hidden md:blcok">Connect me over</h1>
+      <div className="pt-4 md:pt-12 px-4 md:px-20 xl:px-40 flex gap-[10px] md:gap-[2rem] items-center">
+        <h1 className="text-xl font-semibold text-[#7629ff] hidden md:blcok">
+          Connect me over
+        </h1>
 
-<LinkedInIcon className="icon"/>
-<GitHubIcon className="icon"/>
-<InstagramIcon className="icon"/>
-<EmailIcon className="icon"/>
-</div>
-      <div className="px-8 md:px-40 pt-52 md:pt-60">
-      
-        <h1 className="font-light md:text-4xl mb-1 md:mb-4 text-[#7629ff]">Hey !</h1>
-        <h1 className="font-bold text-3xl md:text-6xl mb-8 text-[#7629ff]">I,m Jaison</h1>
-        <p className="text-sm md:text-xl text-[#868686] w-[90%] md:w-[40%]">
+        <a href="https://www.linkedin.com/in/jaisonjoshi/">
+          <LinkedInIcon className="icon" />
+        </a>
+        <a href="https://github.com/jaisonjoshi">
+          <GitHubIcon className="icon" />
+        </a>
+        <a href="https://www.instagram.com/jai_so_n_jo_shi__/">
+          <InstagramIcon className="icon" />
+        </a>
+
+        <a href="mailto:jaisonjoshi2001@gmail.com">
+          <EmailIcon className="icon" />
+        </a>
+      </div>
+      <div className="px-8 md:px-20 xl:px-40 pt-52 md:pt-60">
+        <h1 className="font-light md:text-4xl mb-1 md:mb-4 text-[#7629ff]">
+          Hey !
+        </h1>
+        <h1 className="font-bold text-3xl md:text-6xl mb-8 text-[#7629ff]">
+          I,m Jaison
+        </h1>
+        <p className="header-text text-sm md:text-xl text-[#868686] w-[90%]  md:w-[60%] xl:w-[40%]">
           Driven software developer with a passion for innovation and a
           commitment to creating outstanding solutions.
         </p>
         <div className="hidden md:flex gap-8 flex-wrap my-12">
-          <button className="btn">About me</button>
-          <button className="btn">Projects</button>
+        <a href="#skills">
+            <button className="btn">Skills</button>
+          </a> 
+          <a href="#projects">
+            <button className="btn">Projects</button>
+          </a>
+          <a href="#volunteering">
+            <button className="btn">Volunteering</button>
+          </a>
+        <a href="#aboutme">
+            <button className="btn">About me</button>
+          </a>          
 
-          <button className="btn">Skills</button>
-        </div>
+                 </div>
         <div className="hidden md:flex gap-8 my-12">
-          <button className="btn">Volunteering</button>
-          <button className="btn">Resume</button>
+        <a href="https://drive.google.com/file/d/1A77iQfbbFC-ny-xKlHTqxGL4fbj05kDg/view?usp=sharing"><button className="btn">Resume</button></a>
+          
         </div>
         <div className="flex md:hidden gap-2 flex-wrap my-8">
-        <button className="btn">About me</button>
-          <button className="btn">Projects</button>
+        <a href="#skills">
+            <button className="btn">Skills</button>
+          </a>
+          <a href="#projects">
+            <button className="btn">Projects</button>
+          </a>
+          <a href="#volunteering">
+            <button className="btn">Volunteering</button>
+          </a>
+          <a href="#aboutme">
+            <button className="btn">About me</button>
+          </a>
 
-          <button className="btn">Skills</button>
-          <button className="btn">Volunteering</button>
-          <button className="btn">Resume</button>
+          <a href="https://drive.google.com/file/d/1A77iQfbbFC-ny-xKlHTqxGL4fbj05kDg/view?usp=sharing"><button className="btn">Resume</button></a>
+
+          
+          
+
         </div>
 
-        <h1 className="font-bold text-3xl md:text-4xl mt-20 md:mt-40 text-[#7629ff]">I work with</h1>
-        <div className="flex flex-wrap justify-start w-[100%] md:w-[90%] gap-[2%] md:gap-[8%] tech mt-12 md:my-20">
+        <h1
+          id="skills"
+          className="font-bold text-3xl md:text-4xl pt-20 md:pt-40 text-[#7629ff]"
+        >
+          I work with
+        </h1>
+        <div className="flex flex-wrap justify-start w-[100%] xl:w-[90%] gap-[2%] gap-[5%] xl:gap-[8%] tech mt-12 md:my-20">
           <img src={react} alt="" />
           <img src={node} alt="" />
           <img src={express} alt="" />
@@ -173,7 +213,12 @@ function Home() {
           <img src={figma} alt="" />
         </div>
 
-        <h1 className="font-bold text-3xl md:text-4xl mt-4 md:mt-40 text-[#7629ff]">Projects</h1>
+        <h1
+          id="projects"
+          className="font-bold text-3xl md:text-4xl pt-4 md:pt-40 text-[#7629ff]"
+        >
+          Projects
+        </h1>
 
         <div>
           <div className="flex my-8 md:my-20 flex-col md:flex-row">
@@ -221,11 +266,11 @@ function Home() {
           </div>
           <hr />
           <div className="flex my-12 md:my-20 flex-col md:flex-row">
-          <div className="w-[100%] md:w-[40%]">
+            <div className="w-[100%] md:w-[40%]">
               <img src={alekhya} className=" shadow-1 " alt="" />
             </div>
             <div className="md:pl-20 w-[100%] mt-12 md:mt-0 md:w-[60%]">
-            <h1 className=" text-xl md:text-4xl font-semibold text-[#9900ff]">
+              <h1 className=" text-xl md:text-4xl font-semibold text-[#9900ff]">
                 Alekhya - Website for College arts club
               </h1>
               <p className="mt-4 md:mt-12 text-sm md:text-lg font-medium text-[#4e4e4e]">
@@ -257,11 +302,11 @@ function Home() {
           </div>
           <hr />
           <div className="flex my-12 md:my-20 flex-col md:flex-row">
-          <div className="w-[100%] md:w-[40%]">
+            <div className="w-[100%] md:w-[40%]">
               <img src={saron} className=" shadow-1 " alt="" />
             </div>
             <div className="md:pl-20 w-[100%] mt-12 md:mt-0 md:w-[60%]">
-            <h1 className=" text-xl md:text-4xl font-semibold text-[#9900ff]">
+              <h1 className=" text-xl md:text-4xl font-semibold text-[#9900ff]">
                 Website for Saron Innovature Labs
               </h1>
               <p className="mt-4 md:mt-12 text-sm md:text-lg font-medium text-[#4e4e4e]">
@@ -285,7 +330,10 @@ function Home() {
           </div>
         </div>
 
-        <h1 className="font-bold text-3xl md:text-4xl md:mt-40 text-[#7629ff]">
+        <h1
+          id="volunteering"
+          className="font-bold text-3xl md:text-4xl pt-4 md:pt-40 text-[#7629ff]"
+        >
           Volunteering
         </h1>
         <div className="my-12 md:my-20">
@@ -329,11 +377,15 @@ function Home() {
           <hr />
 
           <div className="my-12 md:my-28">
-          <div className="flex flex-col md:flex-row justify-between md:items-center">
-          <h1 className="text-lg md:text-2xl font-semibold text-[#9900ff]">
+            <div className="flex flex-col md:flex-row justify-between md:items-center">
+              <h1 className="text-lg md:text-2xl font-semibold text-[#9900ff]">
                 TinkerHub Campus Lead
               </h1>
-              <img src={tinker} className="w-[30%] md:w-[10%] mt-4 md:mt-0" alt="" />
+              <img
+                src={tinker}
+                className="w-[30%] md:w-[10%] mt-4 md:mt-0"
+                alt=""
+              />
             </div>
             <div>
               <p className="text-sm md:text-lg mt-8 md:mt-16 text-[#4e4e4e]">
@@ -370,11 +422,15 @@ function Home() {
           <hr />
 
           <div className="my-12 md:my-28">
-          <div className="flex flex-col md:flex-row justify-between md:items-center">
-          <h1 className="text-lg md:text-2xl font-semibold text-[#9900ff]">
+            <div className="flex flex-col md:flex-row justify-between md:items-center">
+              <h1 className="text-lg md:text-2xl font-semibold text-[#9900ff]">
                 Campus ambassador and district coordinator of GTech muLearn{" "}
               </h1>
-              <img src={mu} className="w-[50%] md:w-[20%] mt-4 md:mt-0" alt="" />
+              <img
+                src={mu}
+                className="w-[50%] md:w-[20%] mt-4 md:mt-0"
+                alt=""
+              />
             </div>
             <div>
               <p className="text-sm md:text-lg mt-8 md:mt-16 text-[#4e4e4e]">
@@ -399,41 +455,69 @@ function Home() {
                   <img src={g2} alt="" />
 
                   <img src={g3} alt="" />
-                 
                 </Slider>
               </div>
             </div>
           </div>
 
-
-
-
           <hr />
 
+          <h1
+            id="aboutme"
+            className="font-bold text-4xl pt-12 md:pt-40 text-[#7629ff]"
+          >
+            About me
+          </h1>
+          <p className="text-sm md:text-xl mt-16 text-[#4e4e4e]">
+            {" "}
+            A highly motivated software developer, actively seeking
+            growth-oriented opportunities in the field of programming and
+            software development. Proficient in full stack development, I have
+            hands-on experience with the MERN (MongoDB, Express, React, Node.js)
+            stack, leveraging my skills in front-end and back-end development to
+            create robust and scalable applications.
+          </p>
+          <p className="text-sm md:text-xl mt-4 text-[#4e4e4e]">
+            I have practical experience as a MERN stack developer intern for six
+            months, gaining hands-on expertise in front-end and back-end
+            development, database management, and deployment. Additionally, I
+            have worked part-time as a developer for three months, refining my
+            technical skills and collaborating on various projects. I have also
+            completed freelance projects, enhancing my problem-solving
+            abilities, creativity, and adaptability.
+          </p>
+          <p className="text-sm md:text-xl mt-4 text-[#4e4e4e]">
+            I am dedicated to continuous learning and staying at the forefront
+            of emerging technologies in order to enhance my skills and keep up
+            with industry trends. With a strong desire for personal and
+            professional growth, I am constantly seeking new challenges that
+            will allow me to push the boundaries of my abilities.
+          </p>
+          <h1 className="font-bold text-base md:text-2xl  mt-12 text-[#7629ff]">
+            Here's my Resume
+          </h1>
+          <a className="" href="https://drive.google.com/file/d/1A77iQfbbFC-ny-xKlHTqxGL4fbj05kDg/view?usp=sharing"><button className="btn">Resume</button></a>
 
+          <hr />
+          <div className=" pt-8 pb-8 md:pt-12 md:pb-28 flex gap-[2rem] justify-center md:justify-start items-center">
+            <h1 className="hidden md:blcok text-xl font-semibold text-[#7629ff]">
+              Connect me over
+            </h1>
 
-          <h1 className="font-bold text-4xl mt-12 md:mt-40 text-[#7629ff]">
-          About me
-        </h1>
-<p className="text-sm md:text-xl mt-16 text-[#4e4e4e]"> A highly motivated software developer, actively seeking growth-oriented opportunities in the field of programming and software development. Proficient in full stack development, I have hands-on experience with the MERN (MongoDB, Express, React, Node.js) stack, leveraging my skills in front-end and back-end development to create robust and scalable applications.
-</p><p className="text-sm md:text-xl mt-4 text-[#4e4e4e]">
-I have practical experience as a MERN stack developer intern for six months, gaining hands-on expertise in front-end and back-end development, database management, and deployment. Additionally, I have worked part-time as a developer for three months, refining my technical skills and collaborating on various projects. I have also completed freelance projects, enhancing my problem-solving abilities, creativity, and adaptability.
-</p><p className="text-sm md:text-xl mt-4 text-[#4e4e4e]">
+            <a href="https://www.linkedin.com/in/jaisonjoshi/">
+              <LinkedInIcon className="icon icon-b" />
+            </a>
+            <a href="https://github.com/jaisonjoshi">
+              <GitHubIcon className="icon icon-b" />
+            </a>
+            <a href="https://www.instagram.com/jai_so_n_jo_shi__/">
+              <InstagramIcon className="icon icon-b" />
+            </a>
 
-I am dedicated to continuous learning and staying at the forefront of emerging technologies in order to enhance my skills and keep up with industry trends. With a strong desire for personal and professional growth, I am constantly seeking new challenges that will allow me to push the boundaries of my abilities.</p>
-<h1 className="font-bold text-base md:text-2xl  mt-12 text-[#7629ff]">Here's my Resume</h1>
-<button className="btn my-8 md:mb-28">Resume</button>
-
-<hr />
-<div className=" pt-8 pb-8 md:pt-12 md:pb-28 flex gap-[2rem] justify-center md:justify-start items-center">
-<h1 className="hidden md:blcok text-xl font-semibold text-[#7629ff]">Connect me over</h1>
-
-<LinkedInIcon className="icon icon-b"/>
-<GitHubIcon className="icon icon-b"/>
-<InstagramIcon className="icon icon-b"/>
-<EmailIcon className="icon icon-b"/>
-</div>
-
+            <a href="mailto:jaisonjoshi2001@gmail.com">
+              <EmailIcon className="icon icon-b" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
