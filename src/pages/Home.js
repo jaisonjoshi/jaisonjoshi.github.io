@@ -160,7 +160,7 @@ function Home() {
 
                  </div>
         <div className="hidden md:flex gap-8 my-12">
-        <a href="https://drive.google.com/file/d/1A77iQfbbFC-ny-xKlHTqxGL4fbj05kDg/view?usp=sharing"><button className="btn">Resume</button></a>
+        <a href="https://drive.google.com/file/d/1zPRaSjmBcnVou6NRNla_aqKqJFki7l5z/view?usp=sharing"><button className="btn">Resume</button></a>
           
         </div>
         <div className="flex md:hidden gap-2 flex-wrap my-8">
@@ -177,7 +177,7 @@ function Home() {
             <button className="btn">About me</button>
           </a>
 
-          <a href="https://drive.google.com/file/d/1A77iQfbbFC-ny-xKlHTqxGL4fbj05kDg/view?usp=sharing"><button className="btn">Resume</button></a>
+          <a href="https://drive.google.com/file/d/1zPRaSjmBcnVou6NRNla_aqKqJFki7l5z/view?usp=sharing"><button className="btn">Resume</button></a>
 
           
           
@@ -444,8 +444,7 @@ function Home() {
                 students to connect with experienced mentors from diverse
                 industries, enabling them to gain invaluable insights and learn
                 directly from those who have already established themselves in
-                their respective fields. Through our concerted efforts, we
-                fostered an environment conducive to personal growth,
+                their respective fields. 
               </p>
             </div>
             <div className="my-12">
@@ -496,7 +495,7 @@ function Home() {
           <h1 className="font-bold text-base md:text-2xl  mt-12 text-[#7629ff]">
             Here's my Resume
           </h1>
-          <a className="" href="https://drive.google.com/file/d/1A77iQfbbFC-ny-xKlHTqxGL4fbj05kDg/view?usp=sharing"><button className="btn">Resume</button></a>
+          <a className="" href="https://drive.google.com/file/d/1zPRaSjmBcnVou6NRNla_aqKqJFki7l5z/view?usp=sharing"><button className="btn">Resume</button></a>
 
           <hr />
           <div className=" pt-8 pb-8 md:pt-12 md:pb-28 flex gap-[2rem] justify-center md:justify-start items-center">
