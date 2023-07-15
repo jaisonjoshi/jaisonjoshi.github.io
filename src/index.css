@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bgcontainer{
+    background-image: url('./assets/bodybg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home{
+    background-image: url('./assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+@media screen and (max-width:768px) {
+    .home{
+        background-image: url('./assets/mobbg.png');
+        background-size: contain;
+        background-position: top;
+    }    
+}
+
+.btn{
+    background: white;
+    color: #7629ff;
+    border: 1px solid #7629ff;
+    border-radius: 5px;
+    padding: 5px 25px;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 248, 0.2) 0px 7px 29px 0px;
+}
+.btn:hover{
+    background: #7629ff;
+    color: white;
+    padding: 5px 30px;
+    transition: all ease-in-out 0.3s;
+    box-shadow: rgba(0, 0, 248, 0.2) -25px 25px 29px 0px;
+
+}
+@media screen and (max-width:768px) {
+    .btn{
+        font-size: 12px;
+    }
+
+}
+
+
+.tech img{
+    width: 8%;
+    margin-bottom: 4rem;
+}
+@media screen and (max-width:768px) {
+    .tech img{
+        width: 15%;
+    }
+    
+}
+
+.shadow-1{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 15px;
+    
+    border: 1px solid #cccccc;
+}
+@media screen and (max-width: 768px) {
+    .shadow-1{
+        border-radius: 8px;
+    }
+    
+}
+hr{
+    background-color: #f0c3ff;
+    height: 2px;
+}
+.slick-prev:before, .slick-next:before {
+    color: blueviolet !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #7629ff !important;
+}
+.icon{
+    color:  #7629ff;
+    cursor: pointer;
+}
+@media screen and (max-width:768px) {
+    .icon{
+        color: white;
+        width: 20px !important;
+    }
+    .icon-b{
+        color:  #7629ff;
+
+    }
+    
+}
+.icon:hover{
+    color:#bd59cc;
+}
+@media screen and (min-width:768px) {
+    .slick-next:before {
+        margin-left: 2rem !important;
+    }
+    .slick-prev:before {
+        margin-left: -2rem !important;
+    }
+    .slick-dots {
+        bottom: -45px !important;
+    }
+}
