@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -45,6 +45,9 @@ import g1 from "../assets/volunteer/g1.webp";
 import g2 from "../assets/volunteer/g2.webp";
 import g3 from "../assets/volunteer/g3.webp";
 import { Link } from "react-router-dom";
+import ReactGa from 'react-ga'
+
+
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -69,6 +72,11 @@ function SamplePrevArrow(props) {
 }
 
 function Home() {
+
+  useEffect(()=>{
+    ReactGa.pageview(window.location.pathname)
+  },[])
+
   const settings = {
     dots: true,
     infinite: true,
