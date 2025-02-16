@@ -185,7 +185,7 @@ function Home() {
             <button className="btn">About me</button>
           </a>
 
-          <a href="https://drive.google.com/file/d/1zPRaSjmBcnVou6NRNla_aqKqJFki7l5z/view?usp=sharing"><button className="btn">Resume</button></a>
+          <a href="https://drive.google.com/file/d/1PfP6DRU-3bGAUNFfbg6XBexzX9YTs4ja/view?usp=sharing"><button className="btn">Resume</button></a>
 
           
           
@@ -503,7 +503,7 @@ function Home() {
           <h1 className="font-bold text-base md:text-2xl  mt-12 text-[#7629ff]">
             Here's my Resume
           </h1>
-          <a className="" href="https://drive.google.com/file/d/1zPRaSjmBcnVou6NRNla_aqKqJFki7l5z/view?usp=sharing"><button className="btn">Resume</button></a>
+          <a className="" href="https://drive.google.com/file/d/1PfP6DRU-3bGAUNFfbg6XBexzX9YTs4ja/view?usp=sharing"><button className="btn">Resume</button></a>
 
           <hr />
           <div className=" pt-8 pb-8 md:pt-12 md:pb-28 flex gap-[2rem] justify-center md:justify-start items-center">
